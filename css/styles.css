@@ -38,8 +38,42 @@ body {
     color: currentColor;
 }
 
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+.container {
+    width: 1200px;
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    outline: 1px solid red;
+}
+
+
 /* Studio styles */
 /* Header styles */
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
 
 .header-logo {
     color: var(--accent-color);
@@ -47,6 +81,11 @@ body {
     font-size: 26px;
     font-weight: 700;
     letter-spacing: 0.78px;
+
+    margin-top: 24px;
+    margin-right: 93px;
+    margin-bottom: 24px;
+
 }
 
 .logo-black {
@@ -54,8 +93,16 @@ body {
    
 }
 
-.list {
-    list-style: none;
+.header-links-nav {
+    display: flex;
+}
+
+.header-links-item {
+    margin-right: 50px;
+}
+
+.header-links-item:last-child {
+    margin-right: 0;
 }
 
 .header-link {
@@ -64,11 +111,20 @@ body {
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.28px;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
 }
 
 .header-link:hover,
 .header-link:focus {
     color: var(--accent-color);
+}
+
+.header-contacts-list {
+    display: flex;
+    margin-left: auto;
 }
 
 .contact-link {
@@ -77,6 +133,10 @@ body {
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.28px;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
 }
 
 .active-link {
@@ -88,6 +148,14 @@ body {
     color: var(--accent-color);
 }
 
+.contact-link-item {
+    margin-right: 50px;
+}
+
+.contact-link-item:last-child {
+    margin-right: 0px;
+}
+
 /* Main styles */
 
 /* Hero section */
@@ -95,6 +163,8 @@ body {
 .hero {
     background-color: var(--background-color-dark);
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
@@ -104,6 +174,11 @@ body {
     line-height: 1.36;
     letter-spacing: 2.64px;
     text-transform: uppercase;
+
+    width: 696px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
 }
 
 .hero-button {
@@ -115,9 +190,32 @@ body {
     letter-spacing: 0.96px;
     border: none;
     cursor: pointer;
+
+    padding: 10px 32px;
+
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 /* Advantages styles */
+
+.advantages {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.advantages-list {
+    display: flex;
+    align-items: center;
+}
+
+.advantage-item {
+    margin-right: 30px;
+}
+
+.advantage-item:last-child {
+    margin-right: 0px;
+}
 
 .advantage-title {
     font-size: 14px;
@@ -125,6 +223,8 @@ body {
     line-height: 1.2;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+
+    margin-bottom: 10px;
 }
 
 .advantage-desc {
@@ -135,6 +235,10 @@ body {
 }
 
 /* Skils styles */
+
+.skils {
+    padding-bottom: 94px;
+}
  
 .skils-title {
     text-align: center;
@@ -142,12 +246,30 @@ body {
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 1.08px;
+
+    margin-bottom: 50px;
+}
+
+.skils-list {
+    display: flex;
+    align-items: center;
+}
+
+.skils-item {
+    margin-right: 30px;
+}
+
+.skils-item:last-child {
+    margin-right: 0px;
 }
 
 /* Team styles */
 
 .team {
     background-color: var(--background-color-light);
+    padding-top: 94px;
+    padding-bottom: 94px;
+
 }
 
 .team-title {
@@ -156,6 +278,25 @@ body {
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 1.08px;
+
+    margin-bottom: 50px;
+}
+
+.team-list {
+    display: flex;
+    align-items: center;
+}
+
+.team-item {
+    margin-right: 30px;
+
+    background-color: var(--main-background-color);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.team-item:last-child {
+    margin-right: 0;
 }
 
 .team-member {
@@ -164,6 +305,9 @@ body {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.48px;
+
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .team-member-desc {
@@ -172,12 +316,16 @@ body {
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.48px;
+
+    margin-bottom: 30px;
 }
 
 /* Footer styles */
 
 .footer {
     background-color: var(--background-color-dark);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .logo {
@@ -190,6 +338,10 @@ body {
 
 .logo-white {
     color: var(--secondary-text-color);
+}
+
+.footer-contacts {
+    display: block;
 }
 
 .map-link {
