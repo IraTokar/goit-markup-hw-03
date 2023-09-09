@@ -56,10 +56,10 @@
 
     <!-- Main content -->
     <main>
-      <section>
-        <h1 class="visually-hidden">Портфоліо</h1>
-        <!-- Buttons -->
+      <section class="portfolio">
         <div class="container">
+          <h1 class="visually-hidden">Портфоліо</h1>
+          <!-- Buttons -->
           <ul class="list portfolio-buttons">
             <li class="portfolio-button">
               <button class="button active-button" type="button">Усі</button>
@@ -77,10 +77,9 @@
               <button class="button" type="button">Маркетинг</button>
             </li>
           </ul>
-        </div>
 
-        <!-- Projects -->
-        <div class="container">
+          <!-- Projects -->
+
           <ul class="list portfolio-projects">
             <li class="project-item">
               <a class="link project-link" href="">
@@ -90,8 +89,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="progect-name">Технокряк</h2>
-                <p class="progect-type">Веб-сайт</p>
+                <div class="project-desc">
+                  <h2 class="progect-name">Технокряк</h2>
+                  <p class="progect-type">Веб-сайт</p>
+                </div>
               </a>
             </li>
             <li class="project-item">
@@ -102,8 +103,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="progect-name">Постер New Orlean vs Golden Star</h2>
-                <p class="progect-type">Дизайн</p>
+                <div class="project-desc">
+                  <h2 class="progect-name">Технокряк</h2>
+                  <p class="progect-type">Веб-сайт</p>
+                </div>
               </a>
             </li>
             <li class="project-item">
@@ -114,8 +117,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="progect-name">Ресторан Seafood</h2>
-                <p class="progect-type">Додаток</p>
+                <div class="project-desc">
+                  <h2 class="progect-name">Технокряк</h2>
+                  <p class="progect-type">Веб-сайт</p>
+                </div>
               </a>
             </li>
             <li class="project-item">
@@ -126,8 +131,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="progect-name">Проєкт Prime</h2>
-                <p class="progect-type">Маркетинг</p>
+                <div class="project-desc">
+                  <h2 class="progect-name">Технокряк</h2>
+                  <p class="progect-type">Веб-сайт</p>
+                </div>
               </a>
             </li>
             <li class="project-item">
@@ -138,8 +145,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="progect-name">Проєкт Boxes</h2>
-                <p class="progect-type">Додаток</p>
+                <div class="project-desc">
+                  <h2 class="progect-name">Технокряк</h2>
+                  <p class="progect-type">Веб-сайт</p>
+                </div>
               </a>
             </li>
             <li class="project-item">
@@ -150,8 +159,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="progect-name">Inspiration has no Borders</h2>
-                <p class="progect-type">Веб-сайт</p>
+                <div class="project-desc">
+                  <h2 class="progect-name">Технокряк</h2>
+                  <p class="progect-type">Веб-сайт</p>
+                </div>
               </a>
             </li>
             <li class="project-item">
@@ -162,8 +173,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="progect-name">Видання Limited Edition</h2>
-                <p class="progect-type">Дизайн</p>
+                <div class="project-desc">
+                  <h2 class="progect-name">Технокряк</h2>
+                  <p class="progect-type">Веб-сайт</p>
+                </div>
               </a>
             </li>
             <li class="project-item">
@@ -174,8 +187,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="progect-name">Проєкт LAB</h2>
-                <p class="progect-type">Маркетинг</p>
+                <div class="project-desc">
+                  <h2 class="progect-name">Технокряк</h2>
+                  <p class="progect-type">Веб-сайт</p>
+                </div>
               </a>
             </li>
             <li class="project-item">
@@ -186,8 +201,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="progect-name">Додаток Growing Business</h2>
-                <p class="progect-type">Додаток</p>
+                <div class="project-desc">
+                  <h2 class="progect-name">Технокряк</h2>
+                  <p class="progect-type">Веб-сайт</p>
+                </div>
               </a>
             </li>
           </ul>
@@ -199,23 +216,34 @@
     <footer class="footer">
       <div class="container">
         <!-- Footer navigation -->
-        <a class="link logo" href="./index.html"
-          >Web<span class="logo-white">Studio</span></a
-        >
+        <div class="footer-logo">
+          <a class="link logo footer-logo" href="./index.html"
+            >Web<span class="logo-white">Studio</span></a
+          >
+        </div>
+
         <!-- Footer contacts -->
         <address class="footer-contacts">
-          <a
-            class="link map-link"
-            href="https://goo.gl/maps/1FD8mKBqTNXSPeUQA"
-            target="_blank"
-            >м. Київ, пр-т Лесі Українки, 26</a
-          >
-          <a class="link contact-link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-          <a class="link contact-link" href="tel:+380961111111"
-            >+38 096 111 11 11</a
-          >
+          <div class="footer-contact-link">
+            <a
+              class="link map-link"
+              href="https://goo.gl/maps/1FD8mKBqTNXSPeUQA"
+              target="_blank"
+              >м. Київ, пр-т Лесі Українки, 26</a
+            >
+          </div>
+
+          <div class="footer-contact-link">
+            <a class="link contact-link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </div>
+
+          <div class="footer-contact-link">
+            <a class="link contact-link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </div>
         </address>
       </div>
     </footer>

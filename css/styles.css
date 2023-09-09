@@ -54,6 +54,11 @@ p {
     margin: 0;
 }
 
+img {
+    display: block;
+    max-width: auto;
+}
+
 .container {
     width: 1200px;
 
@@ -73,6 +78,8 @@ p {
 .header-container {
     display: flex;
     align-items: center;
+
+    border-bottom: 1px solid #757575;
 }
 
 .header-logo {
@@ -165,6 +172,8 @@ p {
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+
+    width: 1200px;
 }
 
 .hero-title {
@@ -269,7 +278,8 @@ p {
     background-color: var(--background-color-light);
     padding-top: 94px;
     padding-bottom: 94px;
-
+    
+    width: 1200px;
 }
 
 .team-title {
@@ -326,6 +336,8 @@ p {
     background-color: var(--background-color-dark);
     padding-top: 60px;
     padding-bottom: 60px;
+
+    width: 1200px;
 }
 
 .logo {
@@ -339,6 +351,18 @@ p {
 .logo-white {
     color: var(--secondary-text-color);
 }
+
+.footer-logo { 
+    margin-bottom: 20px;
+}
+
+.footer-contact-link {
+    margin-bottom: 9px;
+}
+
+.footer-contact-link:last-child {
+    margin-bottom: 0px; 
+} 
 
 .footer-contacts {
     display: block;
@@ -359,6 +383,9 @@ p {
 .footer .contact-link {
     color: rgba(255, 255, 255, 0.60);
     font-weight: 400;
+
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 .contact-link:hover,
@@ -370,6 +397,27 @@ p {
 
 /* Buttons styles */
 
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.portfolio-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 50px;
+}
+
+.portfolio-button {
+    margin-left: 8px;
+}
+
+.portfolio-buttons:last-child {
+    margin-left: 0;
+}
+
 .button {
     background-color: var(--background-color-light); 
     text-align: center;
@@ -378,7 +426,13 @@ p {
     line-height: 1.62;
     letter-spacing: 0.48px;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
+
+    padding: 6px 25px;
+
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+
 }
 
 .button:hover,
@@ -399,6 +453,8 @@ p {
     font-weight: 700;
     line-height: 2;
     letter-spacing: 1.08px;
+
+
 }
 
 .progect-name:hover,
@@ -417,3 +473,26 @@ p {
 .progect-type:focus {
     color: var(--accent-color);
 }
+
+.portfolio-projects {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+.project-item {
+    flex-basis: calc((100% / 3)-30px);
+
+    margin-top: 30px;
+    margin-left: 30px;
+
+    border: 1px solid #EEE;
+
+}
+
+.project-desc {
+    padding: 20px 24px
+}
+
