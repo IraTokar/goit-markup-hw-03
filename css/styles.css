@@ -487,11 +487,15 @@ img {
     margin-top: 30px;
     margin-left: 30px;
 
-    border: 1px solid #EEE;
+   
 
 }
 
 .project-desc {
-    padding: 20px 24px
+    padding: 20px 24px;
+
+    border-left: 1px solid #EEE;
+    border-right: 1px solid #EEE;
+    border-bottom: 1px solid #EEE;
 }
 
