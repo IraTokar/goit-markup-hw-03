@@ -56,7 +56,6 @@ p {
 
 img {
     display: block;
-    max-width: auto;
 }
 
 .container {
@@ -74,11 +73,13 @@ img {
 /* Studio styles */
 /* Header styles */
 
+.header {
+    border-bottom: 1px solid #EEE;
+}
+
 .header-container {
     display: flex;
     align-items: center;
-
-    border-bottom: 1px solid #EEE;
 }
 
 .header-logo {
@@ -88,9 +89,7 @@ img {
     font-weight: 700;
     letter-spacing: 0.78px;
 
-    margin-top: 24px;
     margin-right: 93px;
-    margin-bottom: 24px;
 
 }
 
@@ -120,6 +119,7 @@ img {
 
     padding-top: 32px;
     padding-bottom: 32px;
+    display: block;
 
 }
 
@@ -219,6 +219,7 @@ img {
 
 .advantage-item {
     margin-right: 30px;
+    width: 270px;
 }
 
 .advantage-item:last-child {
@@ -308,6 +309,12 @@ img {
     margin-right: 0;
 }
 
+.member-desc {
+    padding-top: 30px;
+    margin-bottom: 30px;
+
+}
+
 .team-member {
     text-align: center;
     font-size: 16px;
@@ -315,8 +322,8 @@ img {
     line-height: 1.2;
     letter-spacing: 0.48px;
 
-    margin-top: 30px;
     margin-bottom: 10px;
+    
 }
 
 .team-member-desc {
@@ -325,8 +332,6 @@ img {
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.48px;
-
-    margin-bottom: 30px;
 }
 
 /* Footer styles */
@@ -336,7 +341,6 @@ img {
     padding-top: 60px;
     padding-bottom: 60px;
 
-    
 }
 
 .logo {
@@ -351,21 +355,6 @@ img {
     color: var(--secondary-text-color);
 }
 
-.footer-logo { 
-    margin-bottom: 20px;
-}
-
-.footer-contact-link {
-    margin-bottom: 9px;
-}
-
-.footer-contact-link:last-child {
-    margin-bottom: 0px; 
-} 
-
-.footer-contacts {
-    display: block;
-}
 
 .map-link {
     color: var(--secondary-text-color);
@@ -379,12 +368,20 @@ img {
     color: var(--accent-color);
 }
 
+.footer-contacts {
+   
+    padding-top: 20px;
+}
+
 .footer .contact-link {
     color: rgba(255, 255, 255, 0.60);
     font-weight: 400;
 
     padding-top: 0px;
     padding-bottom: 0px;
+
+    display: block;
+    margin-top: 9px;
 }
 
 .contact-link:hover,
@@ -410,11 +407,11 @@ img {
 }
 
 .portfolio-button {
-    margin-left: 8px;
+    margin-right: 8px;
 }
 
-.portfolio-buttons:last-child {
-    margin-left: 0;
+.portfolio-button:last-child {
+    margin-right: 0;
 }
 
 .button {
@@ -453,7 +450,7 @@ img {
     line-height: 2;
     letter-spacing: 1.08px;
 
-
+    margin-bottom: 4px;
 }
 
 .progect-name:hover,
